@@ -41,7 +41,7 @@ for (let user of users) {
         if (user[atributes] == user.favoritesSounds) {
             for (let name in user.favoritesSounds) {
                 for (let value in user.favoritesSounds[name]) {
-                    if (typeof user.favoritesSounds[name][value] === 'number') {
+                    if(user.favoritesSounds[name][value] == user.favoritesSounds[name].volume) {     
                         totalVolume += user.favoritesSounds[name][value];
                         contador ++;
                     }
