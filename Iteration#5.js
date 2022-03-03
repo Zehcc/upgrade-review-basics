@@ -6,12 +6,8 @@ se te ocurre como hacer un numero aleatorio no te preocupes! busca información 
 const getRandomInt =(min, max) => {
      return Math.floor(Math.random() * (max - min)) + min;
 }
-
 const rollDice = (number) => {
     console.log('Tu tirada es de '+ getRandomInt(1,number))
 }
 
 rollDice(15);
-
-
-
